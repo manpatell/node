@@ -1,0 +1,167 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and basic styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #343a40;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar a.nav-link {
+  color: #ddd;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a.nav-link:hover {
+  color: #00bcd4;
+}
+
+.navbar-toggler-icon {
+  background-color: #ddd;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+  border-bottom: 3px solid #00bcd4;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-section .btn {
+  font-size: 1.1rem;
+  padding: 10px 30px;
+  background-color: #00bcd4;
+  border: none;
+  color: #fff;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section .btn:hover {
+  background-color: #008c9e;
+  cursor: pointer;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section .form-control {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-section .form-control:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+.contact-section button {
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+  background-color: #008c9e;
+  cursor: pointer;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+
+  .contact-section .form-control,
+  .contact-section button {
+    width: 100%;
+  }
+}
+
+/* Optional: Scroll-to-top button (for better interactivity) */
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+#scrollToTop:hover {
+  background-color: #008c9e;
+}
+
